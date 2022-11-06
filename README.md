@@ -1,7 +1,7 @@
 -- A clone of a Amazon Prime Gaming page --
 
--- MADE USING: --
+-- MADE USING:
 HTML5,
 CSS3,
 JAVASCRIPT,
-BOOTSTRAP v5.2
+BOOTSTRAP v5.2 --
