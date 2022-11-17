@@ -64,3 +64,12 @@ document.querySelectorAll('a').forEach((a) => {
         e.preventDefault();
     })
 })
+
+document.onclick = function(e) {
+    if(e.target.id !== 'lang' && e.target.id !== 'prof' && e.target.id !== 'langIcon' && e.target.id !== 'langText' && e.target.id !== 'langArrow' && e.target.id !== 'profIcon' && e.target.id !== 'profText' && e.target.id !== 'profArrow'){
+        document.querySelector(".l-o").style.display='none';
+        document.querySelector('.header-arrow--right.lang').style.rotate='0deg';
+        document.querySelector(".p-o").style.display='none';
+        document.querySelector('.header-arrow--right.profile').style.rotate='0deg';
+    }
+}
