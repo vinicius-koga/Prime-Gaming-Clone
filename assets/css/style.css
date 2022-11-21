@@ -176,20 +176,26 @@ header{
 
 /*SECTION BANNER*/
 .banner{
-    height: 110vh;
+    height: 120vh;
     background-image: url(https://m.media-amazon.com/images/G/01/sm/amped/lol11/Worlds/knockouts_10c6b60a7bee128008/LoLWorldsKNOCKOUTS_S11Drop5_ODPHeroes_desktop_update_hero_2x.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .banner-left{
     color: white;
     margin-left: 80px;
     max-width: 520px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 180px;
+    justify-content: center;
+    background-color: rgba(44,37,65, 0.4);
+    border-radius: 15px;
+    height: 200px;
+    padding-left: 10px;
 }
 .banner-left h1{
     font-weight: 400;
@@ -208,6 +214,131 @@ header{
 .banner-left span:last-of-type{
     margin-bottom: 20px;
 }
+
+
+
+/* SLIDER */
+.slider{
+    overflow-x: hidden;
+}
+.spacing{
+    width: 76px;
+}
+.slider-width{
+    display: flex;
+    width: 300vw;
+    transition: all 0.7s ease;
+}
+.slider-item{
+    width: 290px;
+    height: 380px;
+    background-color: #2c2541;
+    color: grey;
+    border-radius: 10px;
+    margin: 0px 3px 30px 3px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.slider-item:hover{
+    background-color: #392e5c;
+    color: white;
+}
+.slider-item:hover .slider-item-img-inner{
+    transform: scale(105%);
+}
+.slider-item.active{
+    background-color: #00a8e0;
+    color: #333;
+    font-weight: 600;
+}
+.slider-item.active:hover{
+    background-color: #00bfff;
+    color: black;
+}
+.slider-item-title{
+    height: 15%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-item-img-out{
+    height: 85%;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 1px;
+    overflow: hidden;
+}
+.slider-item-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 1px;
+    overflow: hidden;
+}
+.slider-item-img-inner{
+    background-image: url(../images/slider-img.jpg);
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    transition: all 0.3s ease;
+}
+
+
+/* SLIDER BUTTONS */
+.slider-buttons{
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.slider-button{
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    cursor: pointer;
+}
+.slider-button:hover{
+    background-color: #333;
+}
+.slider-button{
+    border-radius: 5px;
+}
+.slider-button.left{
+    margin-right: 5px;
+}
+.slider-button-left-inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.slider-button-left-inner img{
+    width: 100%;
+    transform: rotate(90deg);
+}
+.slider-button-right-inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.slider-button-right-inner img{
+    width: 100%;
+    transform: rotate(270deg);
+}
+.slider-button.right{
+    margin-right: 20px;
+}
+
+
+
 
 
 /*SECTION IMG-CONTENT*/
