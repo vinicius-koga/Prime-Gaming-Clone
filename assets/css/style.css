@@ -605,6 +605,9 @@ footer{
     .l-o{
         z-index: 999;
     }
+    .banner-left{
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 650px){
