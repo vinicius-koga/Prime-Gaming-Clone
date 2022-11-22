@@ -177,7 +177,7 @@ header{
 /*SECTION BANNER*/
 .banner{
     height: 120vh;
-    background-image: url(https://m.media-amazon.com/images/G/01/sm/amped/lol11/Worlds/knockouts_10c6b60a7bee128008/LoLWorldsKNOCKOUTS_S11Drop5_ODPHeroes_desktop_update_hero_2x.jpg);
+    background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
@@ -285,6 +285,9 @@ header{
     border-radius: 0px 0px 10px 10px;
     transition: all 0.3s ease;
 }
+.mobile-slider{
+    display: none;
+}
 
 
 /* SLIDER BUTTONS */
@@ -390,11 +393,15 @@ header{
 .img-content .content button:hover{
     background-color: #1bb9ee;
 }
+.img-content.left .content{
+    order: 1;
+}
 .img-content.left .content--box{
     height: 25rem;
 }
 .img-content.left  .img{
     background-image: url(https://m.media-amazon.com/images/G/01/sm/amped/lol11/detailcard/drop1/LoL_S11Drop1_GameDetails-TileCard_tab1_card1_2x.jpg);
+    order: 2;
 }
 .img-content.left .content .content--box p a{
     text-decoration: none;
@@ -539,4 +546,152 @@ footer{
     opacity: 0.6;
     margin-right: 30px;
     cursor: pointer;
+}
+
+@media (max-width: 1137px){
+    .banner{
+        background-position: center;
+    }
+    .img-content{
+        display: block;
+    }
+    .img-content .content{
+        height: 350px;
+        padding: 0px 100px;
+        width: 100%;
+        text-align: center;
+    }
+    .img-content .img{
+        height: 50vh;
+    }
+    .img-content.left .img{
+        height: 50vh;
+    }
+    .img-content.left .content--box{
+        height: 50vh;
+    }
+    .img-content .content--box{
+        height: 50vh;
+    }
+    .img-content .content button{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1024px){
+    .doubts-container{
+        display: block;
+    }
+    .doubts-container-right{
+        margin-left: 0;
+    }
+    .fcl-links{
+        display: block;
+    }
+    .footer-container{
+        height: auto;
+    }
+}
+
+@media (max-width: 800px){
+    .fcl-info span{
+        text-align: center;
+    }
+    .fcl-links{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-container{
+        height: 200px;
+    }
+}
+
+@media (max-width: 650px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-position: center;
+    }
+    .slider{
+        display: none;
+    }
+    .banner-left{
+        position: absolute;
+        top: 100px;
+        margin: 0;
+    }
+    .mobile-slider{
+        display: flex;
+    }
+}
+
+@media (max-width: 610px){
+    .slider-item.mobile{
+        display: none;
+    }
+    .fcl-bar{
+        display: none;
+    }
+    .footer-container--right{
+        display: none;
+    }
+    .footer-container--left img{
+        display: none;
+    }
+    .footer-container{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 560px){
+    .header--left-content span{
+        display: none;
+    }
+    .header--left-content .header-arrow{
+        display: none;
+    }
+    .header--right-content p{
+        display: none;
+    }
+    .header-arrow--right{
+        margin-left: 5px;
+    }
+    .header--right-content{
+        margin-right: 10px;
+    }
+    .content--box{
+        width: 100%;
+    }
+    .img-content .content{
+        padding: 0px 20px;
+    }
+    .banner-left{
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .doubts-question{
+        font-size: 13px;
+        margin: 0;
+    }
+    .doubts-number{
+        display: none;
+    }
+    .banner-left h1{
+        font-size: 20px;
+    }
+    .banner-left span{
+        font-size: 13px;
+    }
+    .img-content .content{
+        height: 400px;
+        display: flex;
+        align-items: center;
+    }
+    .img-content .content h1{
+        font-size: 20px;
+    }
 }

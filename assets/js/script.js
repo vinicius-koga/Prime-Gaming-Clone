@@ -81,19 +81,21 @@ document.querySelector('.slider-width').style.width = `calc(${totalSlides} * 296
 let currentSlide = 0;
 function goNext() {
     currentSlide++;
-    if(currentSlide > 7){
+    let lastItem = document.getElementById('last-item');
+    let rect = lastItem.getBoundingClientRect();
+    if(rect.right < window.innerWidth){
         currentSlide = 0;
     }
     updateMargin();
-    console.log(currentSlide)
 }
 function goPrev() {
     currentSlide--;
+    let lastItem = document.getElementById('last-item');
+    let rect = lastItem.getBoundingClientRect();
     if(currentSlide < 0){
         currentSlide = 0;
     }
     updateMargin();
-    console.log(currentSlide)
 }
 function updateMargin() {
     let newMargin = currentSlide * 296;
