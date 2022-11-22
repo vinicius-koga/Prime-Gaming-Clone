@@ -716,6 +716,9 @@ footer{
     .fcl-links a{
         margin-right: 0;
     }
+    .banner{
+        height: 100vh;
+    }
 }
 
 @media (max-width: 380px) {
