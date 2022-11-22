@@ -560,6 +560,8 @@ footer{
         padding: 0px 100px;
         width: 100%;
         text-align: center;
+        display: flex;
+        align-items: center;
     }
     .img-content .img{
         height: 50vh;
@@ -604,6 +606,12 @@ footer{
     }
     .footer-container{
         height: 200px;
+    }
+    .p-o{
+        z-index: 999;
+    }
+    .l-o{
+        z-index: 999;
     }
 }
 
@@ -673,6 +681,10 @@ footer{
 }
 
 @media (max-width: 480px) {
+    .banner{
+        background-position: right;
+        background-image: url(../images/mb-banner.jpg);
+    }
     .doubts-question{
         font-size: 13px;
         margin: 0;
@@ -688,10 +700,11 @@ footer{
     }
     .img-content .content{
         height: 400px;
-        display: flex;
-        align-items: center;
     }
     .img-content .content h1{
         font-size: 20px;
+    }
+    .l-o{
+        right: 0;
     }
 }
