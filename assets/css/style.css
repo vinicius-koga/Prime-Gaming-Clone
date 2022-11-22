@@ -176,7 +176,7 @@ header{
 
 /*SECTION BANNER*/
 .banner{
-    height: 120vh;
+    height: auto;
     background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: right;
@@ -196,6 +196,7 @@ header{
     border-radius: 15px;
     height: 200px;
     padding-left: 10px;
+    margin-top: 180px;
 }
 .banner-left h1{
     font-weight: 400;
@@ -630,9 +631,7 @@ footer{
         display: none;
     }
     .banner-left{
-        position: absolute;
-        top: 100px;
-        margin: 0;
+        margin: 100px 0px;
     }
     .mobile-slider{
         display: flex;
@@ -682,9 +681,6 @@ footer{
     .img-content .content{
         padding: 0px 20px;
     }
-    .banner-left{
-        margin: 0px 10px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -715,9 +711,6 @@ footer{
     }
     .fcl-links a{
         margin-right: 0;
-    }
-    .banner{
-        height: 100vh;
     }
 }
 
