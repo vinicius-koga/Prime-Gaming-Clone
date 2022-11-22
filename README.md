@@ -8,4 +8,4 @@
     <li>JAVASCRIPT</li>
 </ul>
 <hr>
--- Responsividade à dispositivos mobile ainda não foi adicionada --
+<h3>Este site é responsivo a dispositivos mobile até 320px de largura</h3>
