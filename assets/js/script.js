@@ -90,8 +90,6 @@ function goNext() {
 }
 function goPrev() {
     currentSlide--;
-    let lastItem = document.getElementById('last-item');
-    let rect = lastItem.getBoundingClientRect();
     if(currentSlide < 0){
         currentSlide = 0;
     }
