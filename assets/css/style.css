@@ -596,14 +596,6 @@ footer{
 }
 
 @media (max-width: 800px){
-    .fcl-info span{
-        text-align: center;
-    }
-    .fcl-links{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
     .footer-container{
         height: 200px;
     }
@@ -616,6 +608,14 @@ footer{
 }
 
 @media (max-width: 650px){
+    .fcl-info span{
+        text-align: center;
+    }
+    .fcl-links{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
     .banner{
         display: flex;
         flex-direction: column;
@@ -709,5 +709,11 @@ footer{
     }
     .l-o{
         right: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .doubts-question-box{
+        padding: 3px;
     }
 }
