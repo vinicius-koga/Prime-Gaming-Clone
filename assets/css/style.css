@@ -710,6 +710,9 @@ footer{
     .l-o{
         right: 0;
     }
+    .doubts-text{
+        padding: 0px 5px 30px 5px;
+    }
 }
 
 @media (max-width: 380px) {
