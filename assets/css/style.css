@@ -713,6 +713,9 @@ footer{
     .doubts-text{
         padding: 0px 5px 30px 5px;
     }
+    .fcl-links a{
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 380px) {
