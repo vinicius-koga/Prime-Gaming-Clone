@@ -561,6 +561,7 @@ footer{
         text-align: center;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     .img-content .img{
         height: 50vh;
@@ -699,6 +700,7 @@ footer{
     }
     .img-content .content{
         height: 400px;
+        padding: 20px;
     }
     .img-content .content h1{
         font-size: 20px;
