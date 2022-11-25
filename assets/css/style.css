@@ -193,7 +193,7 @@ header{
     flex-direction: column;
     justify-content: center;
     background-color: rgba(44,37,65, 0.4);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     border-radius: 15px;
     height: 200px;
     padding-left: 10px;
@@ -556,7 +556,7 @@ footer{
         display: block;
     }
     .img-content .content{
-        height: 350px;
+        height: auto;
         padding: 0px 100px;
         width: 100%;
         text-align: center;
@@ -624,6 +624,9 @@ footer{
         flex-direction: column;
         text-align: center;
     }
+    .fcl-links a{
+        margin-top: 3px;
+    }
     .banner{
         display: flex;
         flex-direction: column;
@@ -637,9 +640,6 @@ footer{
     }
     .mobile-slider{
         display: flex;
-    }
-    .banner-left{
-        background-color: rgba(44,37,65, 0.7);
     }
 }
 
@@ -703,8 +703,11 @@ footer{
         font-size: 13px;
     }
     .img-content .content{
-        height: 400px;
-        padding: 20px;
+        height: auto;
+        padding: 30px 20px;
+    }
+    .img-content .content--box{
+        height: auto;
     }
     .img-content .content h1{
         font-size: 20px;
