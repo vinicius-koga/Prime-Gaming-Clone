@@ -217,7 +217,7 @@ header {
 /*SECTION BANNER*/
 .banner {
     height: auto;
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/bannerWeb.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
@@ -725,7 +725,7 @@ footer {
 
     .banner {
         background-position: right;
-        background-image: url(../images/mb-banner.jpg);
+        background-image: url(../images/mb-bannerWeb.jpg);
     }
 }
 
